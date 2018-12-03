@@ -2,12 +2,17 @@
 GLOBALS CLASSES 
 -------------------------------------------------*/
 *{padding:0; margin:0;}
-body{font-family:"Trebuchet MS"; font-size:14px; color:#ffed71; background:url(../images/bg1.jpg);}
+body{	background: #DCDDDF url(https://cssdeck.com/uploads/media/items/7/7AF2Qzt.png);
+	color: #000;
+	font: 14px Arial;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;}
 img{border:none;}
-h1{ font-family:"Trebuchet MS"; font-size:22px; font-weight:normal;}
-h2{ font-family:"Trebuchet MS"; font-size:18px; font-weight:normal;}
+h1{ font-family:"Arial"; font-size:22px; font-weight:normal;}
+h2{ font-family:"Arial"; font-size:18px; font-weight:normal;}
 P{ line-height:20px;}
-a{text-decoration:none; color:#ffed71;}
+a{text-decoration:none; color:black;}
 a:hover{color:#ffffff;}
 /*-------------------------------------------------
 GENERAL CLASSES
@@ -41,9 +46,9 @@ MENU CLASSES
 .menu-wrap{ overflow:hidden; margin:25px auto 30px auto; width:960px;}
 .menu{ float:left; width:660px;}
 .menu ul li{ list-style:none; float:left; width:88px; text-align:center; line-height:40px; margin-right:10px;}
-.menu ul li a{ text-decoration:none; font-size:15px; font-weight:bold; text-transform:uppercase; text-align:center; display:block; color:#ffed71;}
+.menu ul li a{ text-decoration:none; font-size:15px; font-weight:bold; text-transform:uppercase; text-align:center; display:block; color:black;}
 .menu ul li a:hover{ color:#ffffff;  background:url(../images/menu-btn.png) no-repeat;}
-.menu ul li a.active{ background:url(../images/menu-btn.png) no-repeat; color:#ffed71; width:88px; height:40px; color:#ffffff;}
+.menu ul li a.active{ background:url(../images/menu-btn.png) no-repeat; color:black; width:88px; height:40px; color:#ffffff;}
 
 /*-------------------------------------------------
 SOCIAL MEDIA CLASSES
@@ -56,7 +61,7 @@ SOCIAL MEDIA CLASSES
 BANNER CLASSES
 -------------------------------------------------*/
 .banner-wrap{width:960px; overflow:hidden; margin:0 auto;}
-.banner{ height:430px; background:url(../images/banner-bg.png) no-repeat;}
+.banner{ height:430px; background:url(../imag/banner-bg.png) no-repeat;}
 .banner .banner-img{ margin:0 auto; padding-top:54px; width:420px;}
 .shadow{ width:950px; height:38px; background:url(../images/shadow.png) no-repeat center; margin-bottom:45px;}
 
@@ -86,14 +91,14 @@ WRAP3 CLASSES
 .wrap3 .panel .title{ padding-bottom:30px;}
 .wrap3 .panel .title h1{ color:#ffffff;}
 .wrap3 .panel .content img{ margin-bottom:20px;}
-.wrap3 .panel .content p a{ color:#ffed71; text-decoration:underline; font-style:italic; padding-top:30px; display:block;}
+.wrap3 .panel .content p a{ color:black; text-decoration:underline; font-style:italic; padding-top:30px; display:block;}
 .wrap3 .panel .content p a:hover{ color:#fff; text-decoration:none;}
 .wrap3 .panel .content .icon{ float:left; padding-right:20px;}
 .wrap3 .panel .content spna{ text-decoration:underline; color:#ffffff;}
 .wrap3 .panel .content ul{padding-top:30px;}
 .wrap3 .panel .content ul li{ list-style:none; background:url(../images/line-bg.jpg) repeat-x bottom; line-height:38px;}
 .wrap3 .panel .content ul li a{ text-decoration:none; color:#ffffff;}
-.wrap3 .panel .content ul li a:hover{color:#ffed71;}
+.wrap3 .panel .content ul li a:hover{color:black;}
 
 /*-------------------------------------------------
 COLS CLASSES
@@ -130,10 +135,10 @@ CONTACT FORM CLASSS
 
 .contact-form {padding:30px; width:100%; float:left;}
 .contact-form label {display: block; padding:10px 0 10px 0;}
-.contact-form label span {display: block; color:#ffed71;font-size:16px; float:left; width:80px; text-align:left; padding:5px 20px 0 0;}
+.contact-form label span {display: block; color:black;font-size:16px; float:left; width:80px; text-align:left; padding:5px 20px 0 0;}
 .contact-form .input_text {padding:10px 10px; width:440px; background:#1e3246;border: none; color:#fff; background:url(../images/bg2.jpg) repeat-x; outline:none; font-family:"Trebuchet MS"; font-size:14px;}
 .contact-form .message{padding:10px 10px; width:440px; color:#fff;border: none;overflow:hidden;height:150px;background:url(../images/bg2.jpg); outline:none; font-family:"Trebuchet MS"; font-size:14px;}
-.contact-form .button{padding:8px;background:#ff9c00; color:#1e3246; text-transform:uppercase; font-family:"Trebuchet MS"; border:0px solid;margin-left:100px;margin-top:20px;}
+.contact-form .button{padding:8px;background:green; color:#1e3246; text-transform:uppercase; font-family:"Trebuchet MS"; border:0px solid;margin-left:100px;margin-top:20px;}
 
 .address { float:left; width:370px; margin-left:30px;}
 .address .panel { border:none; color:#9b9e9a}
