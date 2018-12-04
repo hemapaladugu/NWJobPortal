@@ -69,169 +69,63 @@ tr:nth-child(even) {background-color: #f2f2f2;}
             <div class=" leftcol">
                 <div class="panel">
                     <div class="title">
-                        <h1 style="color:black">Job Postings </h1>
-                        <span>Click on the job to apply for the job.</span>
+                        <h1 style="color:black">To Apply </h1>
+                        <span>Please fill the details.</span>
                     </div>
-                    <div id="printableTable">
-                        <h1>
-                            Student Employment Opportunities </h1><br>
-                        <div class="classSpecLinksContainer" style="margin-right:5%;">
-
-                            <a onclick="print()"><b>Print Job Information</b></a> |
-                            <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
-                            <a onclick="apply()"><b>Apply</b></a>
-
-                            &nbsp;
-                        </div>
-                        <br>
-
-                        <!-- HEADER -->
-
-
-                        <a id="gjmaincontent"></a>
-
-
-
-
-
-
-                        <div style="width:90%;margin:0 auto;">
-                            <table width="100%" border="0" cellspacing="1" cellpadding="4" summary="Job Information">
-
-                                <thead>
-
-                                    <tr>
-
-                                        <th scope="row" class="jobinfo">Job Title:</th>
-
-                                        <td class="maroon">
-                                            Math Tutor, Mathematics
-                                        </td>
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <th scope="row" class="jobinfo">Opening Date/Time:</th>
-
-                                        <td>
-
-                                            &nbsp;
-                                            Mon. 12/03/18 12:00 AM Central Time
-                                        </td>
-
-                                    </tr>
-
-                                    <tr>
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <th scope="row" class="jobinfo">Salary:</th>
-
-                                        <td>
-                                            Not Displayed
-                                        </td>
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <th scope="row" class="jobinfo">Job Type:</th>
-
-                                        <td>
-                                            Student
-                                        </td>
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <th scope="row" class="jobinfo">Location:</th>
-
-                                        <td>
-                                            Northwest--Maryville campus in Maryville, Missouri
-                                        </td>
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <th scope="row" class="jobinfo">Department:</th>
-
-                                        <td>
-                                            Mathematics/Statistics
-                                        </td>
-
-                                    </tr>
-
-                                </thead>
-
-                            </table>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            <p>Job Description:</p>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                    <tr>
-                                        <td class="jobdetail" headers="viewJobDescription"><strong><u>Purpose of
-                                                    Position:</u></strong><strong>&nbsp;
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            </strong><br>To provide assistance to an academic department.<br></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="jobdetail" headers="examplesOfDuties"><strong><u>Duties and
-                                                    Responsibilities:</u></strong><br>
-                                            <p>&nbsp;Hold study sessions for at least one of the following:</p>
-                                            <li>Fundamentals of
-                                                Mathematics</li>
-                                            <li>Algebra and Geometry for Elementary and Middle School Teachers</li>
-                                            <li>Precalculus</li>
-                                            <li>Calculus</li>
-                                            <li>College Algebra</li>
-                                            <li>Concepts of Mathematics</li>
-                                            <li>Statistics</li><br>
-                                        </td>
-                                    </tr>
-
-
-                                    <tr>
-                                        <td class="jobdetail" headers="typicalQualifications"><strong><u>Job
-                                                    Qualifications:</u></strong><br><br>&nbsp;Applicants must have
-                                            taken classes
-                                            hired to tutor, preferably at Northwest, and earned an A or B in each.<br></td>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="jobheadings" id="supplementalInfo">
-                                            &nbsp;Additional Job Information:
-                                        </th>
-                                    </tr>
-                                    <tr>
-
-                                        <td class="jobdetail" headers="supplementalInfo">
-                                            <div><br>
-                                                <div><strong>Wage Rate:</strong>&nbsp; Currently $8.25<br>&nbsp;</div>
-                                                <div><strong>Hours Available:</strong>&nbsp;5-10<br>&nbsp;</div>
-                                                <div><strong>Start Date:</strong>&nbsp;January 10, 2019<br>&nbsp;</div>
-                                                <div><strong>Application Deadline:</strong>&nbsp;December 6, 2018<br>&nbsp;</div>
-                                                <div><strong>To Apply:</strong>&nbsp;Please fill out a Northwest
-                                                    application online by clicking the APPLY link above.</div>
-                                                <div><strong>Additional Information:</strong>Please attach class
-                                                    schedule. We will be hiring a Study Group Leaders will help with
-                                                    General Statistics and Fundamentals of Math.<br>&nbsp;</div><br>&nbsp;
-                                            </div>
-                        </div><br>
-                        </td>
-                        </tr>                        
-                        </tbody>
+                    <form action="//submit.form" id="EmploymentApplication100" method="post" onsubmit="return ValidateForm(this);">
+                        <script type="text/javascript">
+                        function ValidateForm(frm) {
+                        if (frm.First_Name.value == "") { alert('First name is required.'); frm.First_Name.focus(); return false; }
+                        if (frm.Last_Name.value == "") { alert('Last name is required.'); frm.Last_Name.focus(); return false; }
+                        if (frm.Email_Address.value == "") { alert('Email address is required.'); frm.Email_Address.focus(); return false; }
+                        if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.Email_Address.focus(); return false; }
+                        if (frm.Position.value == "") { alert('Position is required.'); frm.Position.focus(); return false; }
+                        if (frm.Phone.value == "") { alert('Phone is required.'); frm.Phone.focus(); return false; }
+                        return true; }
+                        </script>
+                        <table border="0" cellpadding="5" cellspacing="0">
+                        <tr> <td style="width: 50%">
+                        <label for="First_Name"><b>First name *</b></label><br />
+                        <input name="First_Name" type="text" maxlength="50" style="width: 260px" />
+                        </td> <td style="width: 50%">
+                        <label for="Last_Name"><b>Last name *</b></label><br />
+                        <input name="Last_Name" type="text" maxlength="50" style="width: 260px" />
+                        </td> </tr> <tr> <td colspan="2">
+                        <label for="Email_Address"><b>Email *</b></label><br />
+                        <input name="Email_Address" type="text" maxlength="100" style="width: 535px" />
+                        </td> </tr> <tr> <td colspan="2">
+                        <label for="Portfolio"><b>Portfolio website</b></label><br />
+                        <input name="Portfolio" type="text" maxlength="255" value="http://" style="width: 535px" />
+                        </td> </tr> <tr> <td colspan="2">
+                        <label for="Position"><b>Position you are applying for *</b></label><br />
+                        <input name="Position" type="text" maxlength="100" style="width: 535px" />
+                        </td> </tr> <tr> <td>
+                        <label for="Salary"><b>Salary requirements</b></label><br /> <input name="Salary" type="text" maxlength="50" style="width: 260px" /> </td> <td>
+                        <label for="StartDate"><b>When can you start?</b></label><br />
+                        <input name="StartDate" type="text" maxlength="50" style="width: 260px" />
+                        </td> </tr> <tr> <td>
+                        <label for="Phone"><b>Phone *</b></label><br />
+                        <input name="Phone" type="text" maxlength="50" style="width: 260px" />
+                        </td> <td>
+                        <label for="Fax"><b>Fax</b></label><br />
+                        <input name="Fax" type="text" maxlength="50" style="width: 260px" />
+                        </td> </tr> <tr> <td colspan="2">
+                        <label for="Relocate"><b>Are you willing to relocate?</b></label><br />
+                        <input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes      
+                        <input name="Relocate" type="radio" value="No" /> No      
+                        <input name="Relocate" type="radio" value="NotSure" /> Not sure
+                        </td> </tr> <tr> <td colspan="2">
+                        <label for="Organization"><b>Last company you worked for</b></label><br />
+                        <input name="Organization" type="text" maxlength="100" style="width: 535px" />
+                        </td> </tr> <tr> <td colspan="2">
+                        <label for="Reference"><b>Reference / Comments / Questions</b></label><br />
+                        <textarea name="Reference" rows="7" cols="40" style="width: 535px"></textarea>
+                        </td> </tr> <tr> <td colspan="2" style="text-align: center;">
+                        
+                        <input name="skip_submit" type="submit" value="Send Application" />
+                        </td> </tr>
                         </table>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -256,47 +150,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </div>
     </div>
     </div>
-    <div class="footer-wrap">
-        <div class="wrap">
-            <div class="panel marRight30">
-                <div class="title">
-                    <h1>Office Hours</h1>
-                </div>
-                <div class="content">
-                    <h3>Hours: Monday - Friday
-                        8:00 a.m. - 5:00 p.m.
-
-                        Phone: 660.562.1127
-                        <address>Email: hrwebpg@nwmissouri.edu</address></h3>
-                </div>
-            </div>
-            <div class="panel marRight30">
-                <div class="title">
-                    <h1>Student Employment</h1>
-                </div>
-                <div class="content">
-                    <h3> Northwest Missouri State University 800 University Drive Administrative Building Room #125
-                        Maryville, Mo
-                        64468-6001</h3>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="title">
-                    <h1>Contact us </h1>
-                </div>
-                <div class="cotact">
-                    <ul>
-                        <li><img src="images/icon6.png" alt="" />660.562.1140</li>
-                        <li><img src="images/icon7.png" alt="" /><a href="pmclain@nwmissouri.edu">pmclain@nwmissouri.edu</a></li>
-                        <li><img src="images/icon8.png" alt="" />Paula McLain<br>
-                            Coordinator of Student Employment </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="clearing"></div>
-        </div>
-    </div>
-    <!---footer-wrap--->
+    
 </body>
 
 </html>
