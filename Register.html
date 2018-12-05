@@ -173,7 +173,7 @@ form:after {
 #password { background-position: 10px -53px !important }
 #email { background-position: 10px -90px !important }
 #number919 { background-position: 10px -150px !important }
-#content form input[type="submit"] {
+#content form input[type="button"] {
 	background: rgb(254,231,154);
 	background: -moz-linear-gradient(top,  rgba(254,231,154,1) 0%, rgba(254,193,81,1) 100%);
 	background: -webkit-linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%);
@@ -202,7 +202,7 @@ form:after {
 	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 	width: 120px;
 }
-#content form input[type="submit"]:hover {
+#content form input[type="button"]:hover {
 	background: rgb(254,193,81);
 	background: -moz-linear-gradient(top,  rgba(254,193,81,1) 0%, rgba(254,231,154,1) 100%);
 	background: -webkit-linear-gradient(top,  rgba(254,193,81,1) 0%,rgba(254,231,154,1) 100%);
@@ -284,30 +284,38 @@ form:after {
 							<form action="">
 								<h1>Register Form</h1>
 								<div>
-									<input type="text" placeholder="Username" required="" id="username" />
+									<input type="text" placeholder="Username" name="a" required="" id="username" />
 								</div>
 								<div>
-									<input type="password" placeholder="Password" required="" id="password" />
+									<input type="password" placeholder="Password" name="a" required="" id="password" />
                                 </div>
                                 <div>
-									<input type="email" placeholder="Email" required="" id="email" />
+									<input type="email" placeholder="Email" required="" name="a" id="email" />
                                 </div>
                                 <div>
-									<input type="number" placeholder="919 Number" required="" id="number919" />
+									<input type="number" placeholder="919 Number" required="" name="a" id="number919" />
 								</div>
 								<div>
-									<input type="submit" onclick="register()" value="Register" />
-									<script>
-										function register() {
+									<input type="button" onclick="register()" value="Register" />
+									
+
+								</div>
+                            </form><!-- form -->
+                            <script>
+                                    function register() {
+                                        var a = document.getElementById('username').value;
+                                        var b = document.getElementById('password').value;
+                                        var c = document.getElementById('email').value;
+                                        var d = document.getElementById('number919').value;
+                                        if(a.length > 0 && b.length > 0 && c.length > 0 && d.length > 0){
                                             window.alert("Registration successful");
-
-													window.location = "login.html";
-	
-										}
-									</script>
-
-								</div>
-							</form><!-- form -->
+                                            window.location = "login.html";
+                                        }else{
+                                            window.alert("Enter all the required fields");
+                                        }
+                                                
+                                    }
+                                </script>
 
 						</section><!-- content -->
 					</div><!-- container -->
