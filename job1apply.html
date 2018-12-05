@@ -26,6 +26,16 @@ td {
 }
 tr:hover {background-color:grey;}
 tr:nth-child(even) {background-color: #f2f2f2;}
+button{
+	 width: auto;
+	 color: white;
+     border: black; 
+     padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+ }
     </style>
 </head>
 
@@ -105,17 +115,17 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                         <textarea name="Reference" rows="7" cols="40" style="width: 535px"></textarea>
                         </td> </tr> <tr> <td colspan="2" style="text-align: center;">
                         
-                        <input name="skip_submit" type="submit" onclick="send()" value="Send Application" />
+                        <input name="skip_submit" type="button" onclick="send()" value="Send Application" />
                         </td> </tr>
                         </table>
                         </form>
                     </div>
                 </div>
             </div>
-        </div>
+        
 
         <div class="rightcol">
-            <button type="button" onclick="logout()">Log out</button>
+            <button type="button" style="background-color:#004a80" onclick="logout()">Log out</button>
             <script>
                 function logout() {
                     alert('Successfully log out');
@@ -137,7 +147,17 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </div>
     </div>
     </div>
-    
+    </div>
+    <br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="footer">
+		<p>Northwest Missouri State University
+		  800 University Drive | Maryville, MO 64468
+		  660.562.1212 | www.nwmissouri.edu</p>
+	  </div>
 </body>
 
 </html>

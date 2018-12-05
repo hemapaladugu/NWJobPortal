@@ -11,6 +11,7 @@ body{	background: white;
 img{border:none;}
 h1{ font-family:"Arial"; font-size:22px; font-weight:normal;}
 h2{ font-family:"Arial"; font-size:18px; font-weight:normal;}
+h3{font-family:"Arial"; font-size:17px; font-weight:normal; text-align: justify;}
 P{ line-height:20px;}
 a{text-decoration:none; color:black;}
 a:hover{color:#ffffff;}
@@ -39,6 +40,7 @@ HEADER CLASSES
 body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
   }
   
   .topnav {
