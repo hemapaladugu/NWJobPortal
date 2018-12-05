@@ -71,6 +71,7 @@ button{
                             <a onclick="print()"><b>Print Job Information</b></a> |
                             <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
                             <a onclick="apply()"><b>Apply</b></a>
+                            <a onclick="Professor_Details()"><b>Professor_Details</b></a>
 
                             &nbsp;
                         </div>
@@ -241,6 +242,9 @@ button{
                     window.frames["print_frame"].window.print();
                 }
                 function apply() {
+                    window.location = "job1apply.html";
+                }
+                function Professor_Details() {
                     window.location = "job1apply.html";
                 }
             </script>
