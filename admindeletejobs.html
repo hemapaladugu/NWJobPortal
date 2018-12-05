@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Northwet Jobs</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<style>
+		table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+    background-color: #D3D3D3;
+    color: black;
+    border: 1px solid black;
+  padding: 0.5rem; 
+    text-align: center;
+}
+
+td {
+  border: 1px solid black;
+  padding: 0.5rem; 
+  text-align: left;
+}
+
+tr:nth-child(even) {background-color: #D3D3D3}
+button{
+     width: auto;
+     border: white; 
+     padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+ } 
+    </style>
+</head>
+
+<body>
+
+		
+			
+		<!---header-wrap-End--->
+		
+	<!---header-wrap-End--->
+	<br>
+	<div class="topnav" style="padding-left:130px">
+      
+			<a ><img src="images/logo.png" alt="logo" width="80px"></a>
+			<a href="about.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
+			<a href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a>
+			<a href="contact.html"><i class="fa fa-fw fa-envelope"></i>contact</a>
+			<a href="admin.html"><i class="fas fa-user-edit"></i>Admin</a>
+			<a style="float:right" href="https://www.facebook.com/Jobs-Northwest-299673893391099/"><img src="images/facebook.png" alt="" /></a>
+			<a style="float:right" href="https://twitter.com/IT_NorthWest"><img src="images/twwtter.png" alt="" /></a>
+			<a style="float:right" href="https://www.linkedin.com/company/northwest-it-jobs/"><img src="images/linkedin.png" alt="" /></a>
+		  
+	  </div>
+	
+
+	<div class="page-wrap">
+		<div class="wrap3">
+			<div class=" leftcol">
+				<div class="panel">
+					<div class="title">
+						<h1 style="color:black">Job Portal </h1>
+						<span></span>
+					</div>
+					<div>
+						<table>
+							<thead>
+								<tr>
+									<th>Position</th>
+									<th>Emp.type</th>
+									<th>Salary</th>
+                                    <th>Closing date</th>
+                                    <th></th>
+                                    <th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><u><a onclick="nav1()">Math Tutor, Mathematics</u></p>
+									</td>
+									<td>Student</td>
+									<td>Not Displayed</td>
+                                    <td>December 15, 2018</td>
+                                    <td><button class="d1" type="button" style="background-color:red">Delete</button></td>
+                                    <td><button class="d1" type="button" style="background-color:green">Update</button></td>
+								</tr>
+								<tr>
+									<td><u><a onclick="nav2()">Football Sports Manager, Athletics</u></p>
+									</td>
+									<td>Student</td>
+									<td>Not Displayed</td>
+                                    <td>December 28, 2018</td>
+                                    <td><button class="d1" type="button" style="background-color:red">Delete</button></td>
+                                    <td><button class="d1" type="button" style="background-color:green">Update</button></td>
+                                </tr>
+								<tr>
+									<td><u><a onclick="nav3()">Office Assistant, Wellness Services</u></p>
+									</td>
+									<td>Student</td>
+									<td>Not Displayed</td>
+                                    <td>December 19, 2018</td>
+                                    <td><button class="d1" type="button" style="background-color:red">Delete</button></td>
+                                    <td><button class="d1" type="button" style="background-color:green">Update</button></td>
+                                </tr>
+								<tr>
+									<td><u><a onclick="nav4()">Program Instructor, School of Health Science & Wellness</u></p></td>									
+									<td>Student</td>
+									<td>Not Displayed</td>
+                                    <td> December 21, 2018</td>
+                                    <td><button class="d1" type="button" style="background-color:red">Delete</button></td>
+                                    <td><button class="d1" type="button" style="background-color:green">Update</button></td>
+                                </tr>
+							</tbody>
+                        </table><br>
+                        <button type="button" onclick="back()" style="background-color:	#0040ff">Back</button>
+					</div>
+				</div>
+			</div>
+			
+				<script>
+                    
+                        function login() {
+                            window.location = "adminnav.html";
+                        }
+                        function back() {
+                            window.location = "adminnav.html";
+                        }
+                        $(document).ready(function () {
+                            $(".d1").click(function () {
+                                $("tr.1").hide();
+                            });
+                        
+                        });
+                    
+					
+					function nav1() {
+						window.location = "job1.html";
+					}
+					function nav2() {
+						window.location = "about.html";
+					}
+					function nav3() {
+						window.location = "about.html";
+					}
+					function nav4() {
+						window.location = "about.html";
+					}
+				</script>
+			
+		</div>
+	</div>
+	<br>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<div class="footer">
+		<p>Northwest Missouri State University
+		  800 University Drive | Maryville, MO 64468
+		  660.562.1212 | www.nwmissouri.edu</p>
+	  </div>
+		
+	
+</body>
+
+</html>

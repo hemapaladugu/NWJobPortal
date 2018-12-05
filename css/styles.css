@@ -2,7 +2,7 @@
 GLOBALS CLASSES 
 -------------------------------------------------*/
 *{padding:0; margin:0;}
-body{	background: #DCDDDF url(https://cssdeck.com/uploads/media/items/7/7AF2Qzt.png);
+body{	background: white;
 	color: #000;
 	font: 14px Arial;
 	margin: 0 auto;
@@ -11,6 +11,7 @@ body{	background: #DCDDDF url(https://cssdeck.com/uploads/media/items/7/7AF2Qzt.
 img{border:none;}
 h1{ font-family:"Arial"; font-size:22px; font-weight:normal;}
 h2{ font-family:"Arial"; font-size:18px; font-weight:normal;}
+h3{font-family:"Arial"; font-size:17px; font-weight:normal; text-align: justify;}
 P{ line-height:20px;}
 a{text-decoration:none; color:black;}
 a:hover{color:#ffffff;}
@@ -36,26 +37,35 @@ GENERAL CLASSES
 /*-------------------------------------------------
 HEADER CLASSES
 -------------------------------------------------*/
-.header-wrap{ background:#000 url(../images/bg2.jpg) repeat-x; height:150px; width:100%; }
-.logo{ width:360px; margin:0 auto;}
-.logo h1{ color:#ffffff; font-size:45px; font-weight: normal; padding-top:70px; padding-bottom:40px;}
-
-/*-------------------------------------------------
-MENU CLASSES
--------------------------------------------------*/
-.menu-wrap{ overflow:hidden; margin:25px auto 30px auto; width:960px;}
-.menu{ float:left; width:660px;}
-.menu ul li{ list-style:none; float:left; width:88px; text-align:center; line-height:40px; margin-right:10px;}
-.menu ul li a{ text-decoration:none; font-size:15px; font-weight:bold; text-transform:uppercase; text-align:center; display:block; color:black;}
-.menu ul li a:hover{ color:#ffffff;  background:url(../images/menu-btn.png) no-repeat;}
-.menu ul li a.active{ background:url(../images/menu-btn.png) no-repeat; color:black; width:88px; height:40px; color:#ffffff;}
-
-/*-------------------------------------------------
-SOCIAL MEDIA CLASSES
--------------------------------------------------*/
-.socia-wrap{ float:right; width:200px;}
-.socail{ overflow:hidden;}
-.socail ul li{ float:left; margin-right:15px; list-style:none;}
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
+  }
+  
+  .topnav {
+	overflow: hidden;
+	background-color: #333;
+  }
+  
+  .topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  .topnav a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  .topnav a.active {
+	
+	color: white;
+  }
 
 /*-------------------------------------------------
 BANNER CLASSES
@@ -69,7 +79,7 @@ BANNER CLASSES
 BOX CLASSES
 -------------------------------------------------*/
 .box{ width:300px; overflow:hidden; float:left;}
-.box .panel .title{ background:url(../images/line-bg.jpg) repeat-x bottom; padding-bottom:25px; margin-bottom:25px;}
+.box .panel .title{ background:lightyellow; repeat-x bottom; padding-bottom:25px; margin-bottom:25px;}
 .box .panel .title span{ float:left; margin-right:12px;}
 .box .panel .title h1{ color:#ffffff; font-weight:normal;}
 /*-------------------------------------------------
@@ -149,27 +159,9 @@ CONTACT FORM CLASSS
 /*-------------------------------------------------
 FOOTER CLASSES
 -------------------------------------------------*/
-.footer-wrap{ background:url(../images/bg2.jpg); margin-top:80px; overflow:hidden;}
-.footer-wrap .wrap{ width:960px; margin:0 auto;background:url(../images/footerbg-light.png) no-repeat center; height:208px; padding-top:60px; padding-bottom:60px; overflow:hidden;}
-.footer-wrap .wrap .panel{width:300px; float:left;}
-.footer-wrap .wrap .panel .title{ color:#ffffff; padding-bottom:30px;}
-.testimonials{background:url(../images/testimonials-bg.png) no-repeat; width:220px; height:106px; padding:30px 50px 30px 30px;}
-.footer-wrap .wrap .panel .content span{ color:green;}
-.footer-wrap .wrap .panel .content span a{ color:green; text-decoration:underline; display:block; padding-top:20px;}
-.footer-wrap .wrap .panel .content span a:hover{ color:#ffed71; text-decoration:none;}
-
-
-.footer-wrap .wrap .panel .content ul{ padding-bottom:30px; overflow:hidden;}
-.footer-wrap .wrap .panel .content ul li{list-style:none; float:left;}
-.footer-wrap .wrap .panel .content ul li .button{ background:url(../images/signup-btn.png); width:80px; height:46px; border:none; font-size:18px; color:#3d1a1b;  font-family:"Trebuchet MS"; margin-left:10px;}
-
-.cotact{width:300px;}
-.cotact ul li{ border-bottom:#0d304f solid 1px; list-style:none; line-height:50px;}
-.cotact ul li img{ padding-right:10px;}
-
-
-.copyright-wrap{ background:url(../images/bg3.jpg) repeat-x center; height:63px; padding-top:45px;}
-.copyright-wrap .content{text-align:center; color:#feaf32;}
-.copyright-wrap .content p a{ color:#feaf32; text-decoration:none;}
-.copyright-wrap .content p a:hover{ color:#ffffff;}
-.copyright-wrap .content p a.active{ color:#ffffff;}
+.footer {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	text-align: center;
+  }
