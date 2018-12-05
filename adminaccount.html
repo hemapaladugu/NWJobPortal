@@ -5,7 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Northwet Jobs</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         body {
 	background: #DCDDDF url(https://cssdeck.com/uploads/media/items/7/7AF2Qzt.png);
@@ -345,29 +347,29 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                                     <td>Johnsmith</td>
                                     <td><u style="text-color:blue;"> John.smith@gmail.com</u></td>
                                     <td>919559567</td>
-                                    <td><button class="d1" type="button" style="background-color:red">Delete</button></td>
+                                    <td><button class="d1 btn btn-danger" type="button" >Delete</button></td>
                                 </tr>
                                 <tr class="2">
                                     <td>Jameshenry</td>
                                     <td><u style="text-color:blue;"> henry.james@gmail.com</u></td>
                                     <td>919553456</td>
-                                    <td><button class="d2" type="button" style="background-color:red">Delete</button></td>
+                                    <td><button class="d2 btn btn-danger" type="button" >Delete</button></td>
                                 </tr>
                                 <tr class="3">
                                     <td>Harryporter</td>
                                     <td><u style="text-color:blue;"> Harry.porter@gmail.com</u></td>
                                     <td>919559567</td>
-                                    <td><button class="d3" type="button" style="background-color:red">Delete</button></td>
+                                    <td><button class="d3 btn btn-danger" type="button" >Delete</button></td>
                                 </tr>
                                 <tr class="4">
                                     <td>bearcat</td>
                                     <td><u style="text-color:blue;"> bearcat@gmail.com</u></td>
                                     <td>919555555</td>
-                                    <td><button  class="d4" type="button" style="background-color:red">Delete</button> </td>
+                                    <td><button  class="d4 btn btn-danger" type="button" >Delete</button> </td>
                                 </tr>
                             </tbody>
                         </table><br>
-                        <button type="button" onclick="back()" style="background-color:#0040ff">Back</button>
+                        <button class="btn btn-primary" type="button" onclick="back()">Back</button>
                     </div>
                     <script>
                         function login() {
@@ -380,7 +382,18 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                             $(".d1").click(function () {
                                 $("tr.1").hide();
                             });
-                        
+							
+                            $(".d2").click(function () {
+                                $("tr.2").hide();
+                            });
+							
+                            $(".d3").click(function () {
+                                $("tr.3").hide();
+                            });
+							
+                            $(".d4").click(function () {
+                                $("tr.4").hide();
+                            });
                         });
                     </script>
 
