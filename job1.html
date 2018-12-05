@@ -5,7 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Northwet Jobs</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         table {
   border-collapse: collapse;
@@ -70,7 +72,7 @@ button{
 
                             <a onclick="print()"><b>Print Job Information</b></a> |
                             <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
-                            <a onclick="apply()"><b>Apply</b></a>
+                            <a onclick="apply()"><b>Apply</b></a> |
                             <a onclick="Professor_Details()"><b>Professor_Details</b></a>
 
                             &nbsp;
@@ -230,11 +232,11 @@ button{
         </div>
 
         <div class="rightcol">
-            <button type="button"  style="background-color:#004a80" onclick="logout()">Log out</button>
+            <button class="btn btn-primary" type="button"   onclick="logout()">Log out</button>
             <script>
                 function logout() {
                     alert('Successfully log out');
-                    window.location = "index.html";
+                    window.location = "Login.html";
                 }
                 function print() {
                     window.frames["print_frame"].document.body.innerHTML = document.getElementById("printableTable").innerHTML;
@@ -245,7 +247,7 @@ button{
                     window.location = "job1apply.html";
                 }
                 function Professor_Details() {
-                    window.location = "job1apply.html";
+                    window.location = "Professor_Details.html";
                 }
             </script>
         </div>
