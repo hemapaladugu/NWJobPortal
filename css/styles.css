@@ -36,26 +36,34 @@ GENERAL CLASSES
 /*-------------------------------------------------
 HEADER CLASSES
 -------------------------------------------------*/
-.header-wrap{ background:#000 url(../images/bg2.jpg) repeat-x; height:150px; width:100%; }
-.logo{ width:360px; margin:0 auto;}
-.logo h1{ color:#ffffff; font-size:45px; font-weight: normal; padding-top:70px; padding-bottom:40px;}
-
-/*-------------------------------------------------
-MENU CLASSES
--------------------------------------------------*/
-.menu-wrap{ overflow:hidden; margin:25px auto 30px auto; width:960px;}
-.menu{ float:left; width:660px;}
-.menu ul li{ list-style:none; float:left; width:88px; text-align:center; line-height:40px; margin-right:10px;}
-.menu ul li a{ text-decoration:none; font-size:15px; font-weight:bold; text-transform:uppercase; text-align:center; display:block; color:black;}
-.menu ul li a:hover{ color:#ffffff;  background:url(../images/menu-btn.png) no-repeat;}
-.menu ul li a.active{ background:url(../images/menu-btn.png) no-repeat; color:black; width:88px; height:40px; color:#ffffff;}
-
-/*-------------------------------------------------
-SOCIAL MEDIA CLASSES
--------------------------------------------------*/
-.socia-wrap{ float:right; width:200px;}
-.socail{ overflow:hidden;}
-.socail ul li{ float:left; margin-right:15px; list-style:none;}
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+	overflow: hidden;
+	background-color: #333;
+  }
+  
+  .topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  .topnav a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  .topnav a.active {
+	
+	color: white;
+  }
 
 /*-------------------------------------------------
 BANNER CLASSES
