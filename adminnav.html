@@ -268,6 +268,16 @@ form:after {
     background-color: #4CAF50;
     color: white;
 }
+button{
+	 width: auto;
+	 color: white;
+     border: black; 
+     padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+ } 
   </style>
 </head>
 
@@ -316,20 +326,27 @@ form:after {
               </div>
                         <div class="vertical-menu">
 								<a href="adminaccount.html" >Accounts</a>
-								<a href="#">Job Portal</a>
-								<a href="#">Update/Delete Jobs</a>
+								<a href="adminjobportal.html">Job Portal</a>
+								<a href="admindeletejobs.html">Update/Delete Jobs</a>
 							  </div>
                   
                   <script>
 											function login() {
 												window.location="adminnav.html";
 											}
+											function logout() {
+						alert('Successfully log out');
+						window.location = "admin.html";
+					}
 										</script>
 	
          
         </div>
 
-      </div>
+	  </div>
+	  <div class="rightcol">
+			<button type="button" style="background-color:#004a80" onclick="logout()">Log out</button>
+			</div>
     </div>
   </div>
   
