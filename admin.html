@@ -166,7 +166,7 @@ form:after {
 }
 #username { background-position: 10px 10px !important }
 #password { background-position: 10px -53px !important }
-#content form input[type="submit"] {
+#content form input[type="button"] {
 	background: rgb(254,231,154);
 	background: -moz-linear-gradient(top,  rgba(254,231,154,1) 0%, rgba(254,193,81,1) 100%);
 	background: -webkit-linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%);
@@ -195,7 +195,7 @@ form:after {
 	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 	width: 120px;
 }
-#content form input[type="submit"]:hover {
+#content form input[type="button"]:hover {
 	background: rgb(254,193,81);
 	background: -moz-linear-gradient(top,  rgba(254,193,81,1) 0%, rgba(254,231,154,1) 100%);
 	background: -webkit-linear-gradient(top,  rgba(254,193,81,1) 0%,rgba(254,231,154,1) 100%);
@@ -285,7 +285,7 @@ form:after {
 						<div class="container">
 							<section id="content">
 								<form action="">
-									<h1>Login Form</h1>
+									<h1> Admin Login Form</h1>
 									<div>
 										<input type="text" placeholder="Username" required="" id="username" />
 									</div>
@@ -293,7 +293,7 @@ form:after {
 										<input type="password" placeholder="Password" required="" id="password" />
 									</div>
 									<div>
-										<input type="submit" onclick="login()" value="Log in" />
+										<input type="button" onclick="login()" value="Log in" />
 									</div>
 								</form><!-- form -->
 
@@ -301,9 +301,25 @@ form:after {
 						</div><!-- container -->
 						<script>
 							function login() {
-								window.location="adminnav.html";
+										var uName = document.getElementById('username').value
+										var pName = document.getElementById('password').value
+										if(uName.length > 0){
+											if(pName.length > 0){
+												if(uName.length < 10){
+													window.location = "adminnav.html";
+												}else{
+													window.alert("Invalid Credentials");
+												}
+												
+											}else{
+												window.alert("Enter Password");
+											}
 
-							}
+										}else{
+											window.alert("Enter UserName");
+										}
+										
+									}
 						</script>
 
 
