@@ -149,27 +149,3 @@ CONTACT FORM CLASSS
 /*-------------------------------------------------
 FOOTER CLASSES
 -------------------------------------------------*/
-.footer-wrap{ background:url(../images/bg2.jpg); margin-top:80px; overflow:hidden;}
-.footer-wrap .wrap{ width:960px; margin:0 auto;background:url(../images/footerbg-light.png) no-repeat center; height:208px; padding-top:60px; padding-bottom:60px; overflow:hidden;}
-.footer-wrap .wrap .panel{width:300px; float:left;}
-.footer-wrap .wrap .panel .title{ color:#ffffff; padding-bottom:30px;}
-.testimonials{background:url(../images/testimonials-bg.png) no-repeat; width:220px; height:106px; padding:30px 50px 30px 30px;}
-.footer-wrap .wrap .panel .content span{ color:green;}
-.footer-wrap .wrap .panel .content span a{ color:green; text-decoration:underline; display:block; padding-top:20px;}
-.footer-wrap .wrap .panel .content span a:hover{ color:#ffed71; text-decoration:none;}
-
-
-.footer-wrap .wrap .panel .content ul{ padding-bottom:30px; overflow:hidden;}
-.footer-wrap .wrap .panel .content ul li{list-style:none; float:left;}
-.footer-wrap .wrap .panel .content ul li .button{ background:url(../images/signup-btn.png); width:80px; height:46px; border:none; font-size:18px; color:#3d1a1b;  font-family:"Trebuchet MS"; margin-left:10px;}
-
-.cotact{width:300px;}
-.cotact ul li{ border-bottom:#0d304f solid 1px; list-style:none; line-height:50px;}
-.cotact ul li img{ padding-right:10px;}
-
-
-.copyright-wrap{ background:url(../images/bg3.jpg) repeat-x center; height:63px; padding-top:45px;}
-.copyright-wrap .content{text-align:center; color:#feaf32;}
-.copyright-wrap .content p a{ color:#feaf32; text-decoration:none;}
-.copyright-wrap .content p a:hover{ color:#ffffff;}
-.copyright-wrap .content p a.active{ color:#ffffff;}
