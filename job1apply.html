@@ -124,7 +124,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                         <textarea name="Reference" rows="7" cols="40" style="width: 535px"></textarea>
                         </td> </tr> <tr> <td colspan="2" style="text-align: center;">
                         
-                        <input name="skip_submit" type="submit" value="Send Application" />
+                        <input name="skip_submit" type="submit" onclick="send()" value="Send Application" />
                         </td> </tr>
                         </table>
                         </form>
@@ -138,7 +138,11 @@ tr:nth-child(even) {background-color: #f2f2f2;}
             <script>
                 function logout() {
                     alert('Successfully log out');
-                    window.location = "index.html";
+                    window.location = "login.html";
+                }
+                function send(){
+                    window.alert("Application submitted");
+                    window.location="job.html";
                 }
                 function print() {
                     window.frames["print_frame"].document.body.innerHTML = document.getElementById("printableTable").innerHTML;

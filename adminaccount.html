@@ -2,11 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Northwet Jobs</title>
-  <link href="css/styles.css" rel="stylesheet" type="text/css" />
-  <style>
-    body {
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Northwet Jobs</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        body {
 	background: #DCDDDF url(https://cssdeck.com/uploads/media/items/7/7AF2Qzt.png);
 	color: #000;
 	font: 14px Arial;
@@ -261,78 +262,149 @@ form:after {
 }
 
 .vertical-menu a:hover {
-    background-color: green;
+    background-color: #ccc;
 }
 
 .vertical-menu a.active {
     background-color: #4CAF50;
     color: white;
 }
+
+		table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid black;
+  padding: 0.5rem; 
+    text-align: center;
+}
+
+td {
+  border: 1px solid black;
+  padding: 0.5rem; 
+  text-align: left;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+ button{
+     width: auto;
+     border: black; 
+     padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+ }   
   </style>
 </head>
 
 <body>
 
-		<div class="header-wrap">
-				<div class="panel marRight30">
-					<img src="images/logoa.png" alt="logo" >
-				</div>
-			
-		<!---header-wrap-End--->
-		
-  <!---header-wrap-End--->
-
-  <div class="menu-wrap">
-    <div class="menu">
-      <ul>
-        
-        <li><a href="about.html">Home</a></li>
-        <li><a href="Login.html" >Login</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a href="admin.html" class="active">Admin</a></li>
-      </ul>
-    </div>
-
-    <div class="socia-wrap">
-      <div class="socail">
-        <ul>
-          
-          <li><a href="https://www.facebook.com/Jobs-Northwest-299673893391099/"><img src="images/facebook.png" alt="" /></a></li>
-          <li><a href="#"><img src="images/twwtter.png" alt="" /></a></li>
-          <li><a href="#"><img src="images/linkedin.png" alt="" /></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!---menu-wrap-End--->
-
-  <div class="page-wrap">
-    <div class="wrap3">
-      <div class=" leftcol">
-        <div class="panel">
-            <div class="title">
-                <h1 style="color:black"> Welcome Admin </h1>
-                
-              </div>
-                        <div class="vertical-menu">
-								<a href="adminaccount.html" >Accounts</a>
-								<a href="#">Job Portal</a>
-								<a href="#">Update/Delete Jobs</a>
-							  </div>
-                  
-                  <script>
-											function login() {
-												window.location="adminnav.html";
-											}
-										</script>
-	
-         
+    <div class="header-wrap">
+        <div class="panel marRight30">
+            <img src="images/logoa.png" alt="logo">
         </div>
 
-      </div>
+        <!---header-wrap-End--->
+
+        <!---header-wrap-End--->
+
+        <div class="menu-wrap">
+            <div class="menu">
+                <ul>
+
+                    <li><a href="about.html">Home</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="admin.html" class="active">Admin</a></li>
+                </ul>
+            </div>
+
+            <div class="socia-wrap">
+                <div class="socail">
+                    <ul>
+
+                        <li><a href="https://www.facebook.com/Jobs-Northwest-299673893391099/"><img src="images/facebook.png"
+                                    alt="" /></a></li>
+                        <li><a href="#"><img src="images/twwtter.png" alt="" /></a></li>
+                        <li><a href="#"><img src="images/linkedin.png" alt="" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!---menu-wrap-End--->
+
+        <div class="page-wrap">
+            <div class="wrap3">
+                <div class=" leftcol">
+                    <div class="panel">
+                        <div class="title">
+                            <h1 style="color:black"> Welcome Admin </h1>
+
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>919 Number</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="1">
+                                    <td>Johnsmith</td>
+                                    <td><u style="text-color:blue;"> John.smith@gmail.com</u></td>
+                                    <td>919559567</td>
+                                    <td><button class="d1" type="button" style="background-color:red">Delete</button></td>
+                                </tr>
+                                <tr class="2">
+                                    <td>Jameshenry</td>
+                                    <td><u style="text-color:blue;"> henry.james@gmail.com</u></td>
+                                    <td>919553456</td>
+                                    <td><button class="d2" type="button" style="background-color:red">Delete</button></td>
+                                </tr>
+                                <tr class="3">
+                                    <td>Harryporter</td>
+                                    <td><u style="text-color:blue;"> Harry.porter@gmail.com</u></td>
+                                    <td>919559567</td>
+                                    <td><button class="d3" type="button" style="background-color:red">Delete</button></td>
+                                </tr>
+                                <tr class="4">
+                                    <td>bearcat</td>
+                                    <td><u style="text-color:blue;"> bearcat@gmail.com</u></td>
+                                    <td>919555555</td>
+                                    <td><button  class="d4" type="button" style="background-color:red">Delete</button> </td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+                        <button type="button" onclick="back()" style="background-color:green">Back</button>
+                    </div>
+                    <script>
+                        function login() {
+                            window.location = "adminnav.html";
+                        }
+                        function back() {
+                            window.location = "adminnav.html";
+                        }
+                        $(document).ready(function () {
+                            $(".d1").click(function () {
+                                $("tr.1").hide();
+                            });
+                        
+                        });
+                    </script>
+
+
+                </div>
+
+            </div>
+        </div>
     </div>
-  </div>
-  
+
 </body>
 
 </html>
