@@ -305,7 +305,7 @@ form:after {
 										var pName = document.getElementById('password').value
 										if(uName.length > 0){
 											if(pName.length > 0){
-												if(uName.length < 10){
+												if(uName.length <= 7){
 													window.location = "adminnav.html";
 												}else{
 													window.alert("Invalid Credentials");
