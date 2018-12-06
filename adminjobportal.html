@@ -6,8 +6,8 @@
 	<title>Northwet Jobs</title>
 	<link href="css/styles.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style>
 		table {
   border-collapse: collapse;
@@ -25,6 +25,7 @@ td {
   border: 1px solid black;
   padding: 0.5rem; 
   text-align: left;
+  
 }
 
 tr:nth-child(even) {background-color: #f2f2f2;}
@@ -42,20 +43,21 @@ button{
 </head>
 
 <body>
-		<br>
-		<div class="topnav" style="padding-left:130px">
-      
-				<a ><img src="images/logo.png" alt="logo" width="80px"></a>
-				<a href="about.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
-				<a href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a>
-				<a href="contact.html"><i class="fa fa-fw fa-envelope"></i>contact</a>
-				<a href="admin.html"><i class="fas fa-user-edit"></i>Admin</a>
-				<a style="float:right" href="https://www.facebook.com/Jobs-Northwest-299673893391099/"><img src="images/facebook.png" alt="" /></a>
-				<a style="float:right" href="https://twitter.com/IT_NorthWest"><img src="images/twwtter.png" alt="" /></a>
-				<a style="float:right" href="https://www.linkedin.com/company/northwest-it-jobs/"><img src="images/linkedin.png" alt="" /></a>
-			  
-		  </div>
-		
+	<br>
+	<div class="topnav" style="padding-left:130px">
+
+		<a><img src="images/logo.png" alt="logo" width="80px"></a>
+		<a href="about.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
+		<a href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a>
+		<a href="contact.html"><i class="fa fa-fw fa-envelope"></i>contact</a>
+		<a href="admin.html"><i class="fas fa-user-edit"></i>Admin</a>
+		<a style="float:right" href="https://www.facebook.com/Jobs-Northwest-299673893391099/"><img src="images/facebook.png"
+			 alt="" /></a>
+		<a style="float:right" href="https://twitter.com/IT_NorthWest"><img src="images/twwtter.png" alt="" /></a>
+		<a style="float:right" href="https://www.linkedin.com/company/northwest-it-jobs/"><img src="images/linkedin.png" alt="" /></a>
+
+	</div>
+
 
 	<div class="page-wrap">
 		<div class="wrap3">
@@ -66,10 +68,51 @@ button{
 						<span>Click on the job to apply for the job.</span>
 					</div>
 					<div>
-						<button class="btn btn-primary">Add new job</button>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Add
+							new job</button>
+
+
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+						 aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+
+										<h4 class="modal-title" id="exampleModalLabel">Fill the details</h4>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="form-group">
+												<label for="recipient-name" class="col-form-label">Job title :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input type="text" id="mysal" placeholder="tutor">
+											</div>
+											<div class="form-group">
+												<label for="recipient-name" class="col-form-label">Emp.type :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input type="text" id="mysal" placeholder="Student">
+											</div>
+											<div class="form-group">
+												<label for="message-text" class="col-form-label">Salary :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input type="text" id="mysal" placeholder="Not Displayed">
+											</div>
+											<div class="form-group">
+												<label for="message-text" class="col-form-label">Closing Date : </label>
+												<input type="month" id="myMonth" value="2018-12">
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary" data-dismiss="modal" onclick="add()">Add</button>
+									</div>
+								</div>
+							</div>
+						</div>
 						<br>
 						<br>
-						<table>
+						<table id="myTable">
 							<thead>
 								<tr>
 									<th>Position</th>
@@ -80,28 +123,25 @@ button{
 							</thead>
 							<tbody>
 								<tr>
-									<td><u><a onclick="nav1()">Math Tutor, Mathematics</u></p>
-									</td>
+									<td><a onclick="nav1()">Math Tutor, Mathematics</a></td>
 									<td>Student</td>
 									<td>Not Displayed</td>
 									<td>December 15, 2018</td>
 								</tr>
 								<tr>
-									<td><u><a onclick="nav2()">Football Sports Manager, Athletics</u></p>
-									</td>
+									<td><a onclick="nav2()">Football Sports Manager, Athletics</a></td>
 									<td>Student</td>
 									<td>Not Displayed</td>
 									<td>December 28, 2018</td>
 								</tr>
 								<tr>
-									<td><u><a onclick="nav3()">Office Assistant, Wellness Services</u></p>
-									</td>
+									<td><a onclick="nav3()">Office Assistant, Wellness Services</a></td>
 									<td>Student</td>
 									<td>Not Displayed</td>
 									<td>December 19, 2018</td>
 								</tr>
 								<tr>
-									<td><u><a onclick="nav4()">Program Instructor, School of Health Science & Wellness</u></p></td>									
+									<td><a onclick="nav4()">Program Instructor, School of Health Science & Wellness</a></td>
 									<td>Student</td>
 									<td>Not Displayed</td>
 									<td> December 21, 2018</td>
@@ -116,22 +156,22 @@ button{
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						
-						<button class="btn btn-primary" >Publish</button>
-						
+
+						<button class="btn btn-primary">Publish</button>
+
 					</div>
 				</div>
 			</div>
 			<div class="rightcol">
-				<button class="btn btn-primary" type="button"  onclick="logout()">Log out</button>
+				<button class="btn btn-primary" type="button" onclick="logout()">Log out</button>
 				<script>
 					function logout() {
 						alert('Successfully log out');
 						window.location = "Login.html";
 					}
 					function back() {
-                            window.location = "adminnav.html";
-                        }
+						window.location = "adminnav.html";
+					}
 					function nav1() {
 						window.location = "job1.html";
 					}
@@ -143,6 +183,18 @@ button{
 					}
 					function nav4() {
 						window.location = "job1.html";
+					}
+					function add() {
+						var table = document.getElementById("myTable");
+						var row = table.insertRow(5);
+						var cell1 = row.insertCell(0);
+						var cell2 = row.insertCell(1);
+						var cell3 = row.insertCell(2);
+						var cell4 = row.insertCell(3);
+						cell1.innerHTML = "Teaching Assistant, Computer Science";
+						cell2.innerHTML = "Student";
+						cell3.innerHTML = "$ 7.3";
+						cell4.innerHTML = "December 25, 2019";
 					}
 				</script>
 			</div>
@@ -158,11 +210,11 @@ button{
 	<br>
 	<div class="footer">
 		<p>Northwest Missouri State University
-		  800 University Drive | Maryville, MO 64468
-		  660.562.1212 | www.nwmissouri.edu</p>
-	  </div>
-		
-	
+			800 University Drive | Maryville, MO 64468
+			660.562.1212 | www.nwmissouri.edu</p>
+	</div>
+
+
 </body>
 
 </html>
