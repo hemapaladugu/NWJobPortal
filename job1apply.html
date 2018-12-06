@@ -48,7 +48,7 @@ button{
         <a><img src="images/logo.png" alt="logo" width="80px"></a>
         <a href="about.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
         <a href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a>
-        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>contact</a>
+        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
         <a href="admin.html"><i class="fas fa-user-edit"></i>Admin</a>
         <a style="float:right" href="https://www.facebook.com/Jobs-Northwest-299673893391099/"><img src="images/facebook.png"
                 alt="" /></a>
@@ -83,7 +83,7 @@ button{
                             <tr>
                                 <td style="width: 50%">
                                     <label for="First_Name"><b>First name *</b></label><br />
-                                    <input name="First_Name" type="text" placeholder="John" maxlength="50" style="width: 260px" />
+                                    <input id="first_name" name="First_Name" type="text" placeholder="John" maxlength="50" style="width: 260px" />
                                 </td>
                                 <td style="width: 50%">
                                     <label for="Last_Name"><b>Last name *</b></label><br />
@@ -93,7 +93,7 @@ button{
                             <tr>
                                 <td colspan="2">
                                     <label for="Email_Address"><b>Email *</b></label><br />
-                                    <input name="Email_Address" type="text" maxlength="100" placeholder="John.smith@gmail.com"
+                                    <input id="email_add" name="Email_Address" type="text" maxlength="100" placeholder="John.smith@gmail.com"
                                         style="width: 535px" />
                                 </td>
                             </tr>
@@ -174,8 +174,15 @@ button{
                     window.location = "login.html";
                 }
                 function send() {
-                    window.alert("Application submitted");
-                    window.location = "job.html";
+                    var a = document.getElementById("first_name").value;
+                    var b = document.getElementById("email_add").value;
+                    if(a.length > 0 && b.length > 0){
+                        window.alert("Application submitted");
+                        window.location = "job.html";
+                    }else{
+                        window.alert("Enter all the required feilds");
+                    }
+                    
                 }
                 function print() {
                     window.frames["print_frame"].document.body.innerHTML = document.getElementById("printableTable").innerHTML;
