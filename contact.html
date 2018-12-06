@@ -14,7 +14,7 @@
     <br>
     <div class="topnav" style="padding-left:130px">
       
-        <a ><img src="images/logo.png" alt="logo" width="80px"></a>
+        <a ><img src="images/logo.png" alt="logo" width="100px"></a>
         <a href="about.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
         <a href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a>
         <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
@@ -31,11 +31,11 @@
       <div class="leftcol">
         <div class="panel">
           <div class="title">
-            <h1 style="color:black">Contact </h1>
+            <h3 style="color:black">CONTACT</h3>
             <span>Drop us a line.</span>
           </div>
           <div class="panel">
-            <form>
+            <form id="myForm">
               <div class="contact-form mar-top30">
                 <label> <span>Full name</span>
                   <input type="text" class="input_text" name="name" id="name" />
@@ -48,7 +48,7 @@
                 </label>
                 <label> <span>Message</span>
                   <textarea class="message" name="feedback" id="feedback"></textarea><br><br><br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                  <button type="button" class="btn btn-primary" data-toggle="modal"  data-target="#exampleModalCenter">
                       Submit 
                     </button>
                     
@@ -67,7 +67,7 @@
                             Thank you.
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+                            <button type="button" class="btn btn-success" onclick="reset()" data-dismiss="modal">OK</button>
                           
                           </div>
                         </div>
@@ -92,7 +92,11 @@
 		  800 University Drive | Maryville, MO 64468
 		  660.562.1212 | www.nwmissouri.edu</p>
     </div>
-    
+    <script>
+    function reset(){
+      document.getElementById("myForm").reset();
+    }
+    </script>
 </body>
 
 </html>
