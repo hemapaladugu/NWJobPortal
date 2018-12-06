@@ -6,8 +6,8 @@
 	<title>Northwet Jobs</title>
 	<link href="css/styles.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style>
 		table {
   border-collapse: collapse;
@@ -42,25 +42,26 @@ button{
 
 <body>
 
-		
-			
-		<!---header-wrap-End--->
-		
+
+
+	<!---header-wrap-End--->
+
 	<!---header-wrap-End--->
 	<br>
 	<div class="topnav" style="padding-left:130px">
-      
-			<a ><img src="images/logo.png" alt="logo" width="80px"></a>
-			<a href="about.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
-			<a href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a>
-			<a href="contact.html"><i class="fa fa-fw fa-envelope"></i>contact</a>
-			<a href="admin.html"><i class="fas fa-user-edit"></i>Admin</a>
-			<a style="float:right" href="https://www.facebook.com/Jobs-Northwest-299673893391099/"><img src="images/facebook.png" alt="" /></a>
-			<a style="float:right" href="https://twitter.com/IT_NorthWest"><img src="images/twwtter.png" alt="" /></a>
-			<a style="float:right" href="https://www.linkedin.com/company/northwest-it-jobs/"><img src="images/linkedin.png" alt="" /></a>
-		  
-	  </div>
-	
+
+		<a><img src="images/logo.png" alt="logo" width="80px"></a>
+		<a href="about.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
+		<a href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a>
+		<a href="contact.html"><i class="fa fa-fw fa-envelope"></i>contact</a>
+		<a href="admin.html"><i class="fas fa-user-edit"></i>Admin</a>
+		<a style="float:right" href="https://www.facebook.com/Jobs-Northwest-299673893391099/"><img src="images/facebook.png"
+			 alt="" /></a>
+		<a style="float:right" href="https://twitter.com/IT_NorthWest"><img src="images/twwtter.png" alt="" /></a>
+		<a style="float:right" href="https://www.linkedin.com/company/northwest-it-jobs/"><img src="images/linkedin.png" alt="" /></a>
+
+	</div>
+
 
 	<div class="page-wrap">
 		<div class="wrap3">
@@ -77,9 +78,9 @@ button{
 									<th>Position</th>
 									<th>Emp.type</th>
 									<th>Salary</th>
-                                    <th>Closing date</th>
-                                    <th></th>
-                                    <th></th>
+									<th>Closing date</th>
+									<th></th>
+									<th></th>
 								</tr>
 							</thead>
 							<tbody>
@@ -88,83 +89,129 @@ button{
 									</td>
 									<td>Student</td>
 									<td>Not Displayed</td>
-                                    <td>December 15, 2018</td>
-                                    <td><button class="d1 btn btn-danger" type="button" onclick="confirm('Are you sure want to delete?')" >Delete</button></td>
-                                    <td><button class="u1 btn btn-success" type="button">Update</button></td>
+									<td>December 15, 2018</td>
+									<td><button class="d1 btn btn-danger" type="button" onclick="confirm('Are you sure want to delete?')">Delete</button></td>
+									<td><button class="u1 btn btn-success" type="button">Update</button></td>
 								</tr>
 								<tr class="2">
 									<td><u><a onclick="nav2()">Football Sports Manager, Athletics</u></p>
 									</td>
 									<td>Student</td>
 									<td>Not Displayed</td>
-                                    <td>December 28, 2018</td>
-                                    <td><button class="d2 btn btn-danger" type="button" onclick="confirm('Are you sure want to delete?')" >Delete</button></td>
-                                    <td><button class="u2 btn btn-success" type="button">Update</button></td>
-                                </tr>
+									<td>December 28, 2018</td>
+									<td><button class="d2 btn btn-danger" type="button" onclick="confirm('Are you sure want to delete?')">Delete</button></td>
+									<td><button class="u2 btn btn-success" type="button">Update</button></td>
+								</tr>
 								<tr class="3">
 									<td><u><a onclick="nav3()">Office Assistant, Wellness Services</u></p>
 									</td>
 									<td>Student</td>
 									<td>Not Displayed</td>
-                                    <td>December 19, 2018</td>
-                                    <td><button class="d3 btn btn-danger" type="button" onclick="confirm('Are you sure want to delete?')">Delete</button></td>
-                                    <td><button class="u3 btn btn-success" type="button">Update</button></td>
-                                </tr>
+									<td id="date">December 19, 2018</td>
+									<td><button class="d3 btn btn-danger" type="button" onclick="confirm('Are you sure want to delete?')">Delete</button></td>
+
+									<!-- Button trigger modal -->
+									<td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal"
+										 data-whatever="@fat">Update</button>
+									</td>
+
+									<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+									 aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+
+													<h4 class="modal-title" id="exampleModalLabel">Office Assistant, Wellness Services</h4>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<form>
+														<div class="form-group">
+															<label for="recipient-name" class="col-form-label">Emp.type</label>
+															<input type="text" id="mysal" value="Student">
+														</div>
+														<div class="form-group">
+															<label for="message-text" class="col-form-label">Salary</label>
+															<input type="text" id="mysal" value="Not Displayed">
+														</div>
+														<div class="form-group">
+															<label for="message-text" class="col-form-label">Closing Date</label>
+															<input type="month" id="myMonth" value="2018-12">
+														</div>
+													</form>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary" data-dismiss="modal" onclick="update()">Update</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</tr>
 								<tr class="4">
-									<td><u><a onclick="nav4()">Program Instructor, School of Health Science & Wellness</u></p></td>									
+									<td><u><a onclick="nav4()">Program Instructor, School of Health Science & Wellness</u></p>
+									</td>
 									<td>Student</td>
 									<td>Not Displayed</td>
-                                    <td> December 21, 2018</td>
-                                    <td><button class="d4 btn btn-danger" type="button" onclick="confirm('Are you sure want to delete?')">Delete</button></td>
-                                    <td><button class="u4 btn btn-success" type="button">Update</button></td>
-                                </tr>
+									<td> December 21, 2018</td>
+									<td><button class="d4 btn btn-danger" type="button" onclick="confirm('Are you sure want to delete?')">Delete</button></td>
+									<td><button class="u4 btn btn-success" type="button">Update</button></td>
+								</tr>
 							</tbody>
-                        </table><br>
-                        <button class="btn btn-primary" type="button" onclick="back()">Back</button>
+						</table><br>
+						<button class="btn btn-primary" type="button" onclick="back()">Back</button>
 					</div>
 				</div>
 			</div>
-			
-				<script>
-                    
-                        function login() {
-                            window.location = "adminnav.html";
-                        }
-                        function back() {
-                            window.location = "adminnav.html";
-                        }
-                        $(document).ready(function () {
-                            $(".d1").click(function () {
-                                $("tr.1").hide();
-                            });
-							$(".d2").click(function () {
-                                $("tr.2").hide();
-                            });
-							$(".d3").click(function () {
-                                $("tr.3").hide();
-                            });
-							$(".d4").click(function () {
-                                $("tr.4").hide();
-                            });
-							
-                        
-                        });
-                    
+
+			<script>
+
+				function login() {
+					window.location = "adminnav.html";
+				}
+				function back() {
+					window.location = "adminnav.html";
+				}
+				function update() {
 					
-					function nav1() {
-						window.location = "job1.html";
-					}
-					function nav2() {
-						window.location = "about.html";
-					}
-					function nav3() {
-						window.location = "about.html";
-					}
-					function nav4() {
-						window.location = "about.html";
-					}
-				</script>
-			
+					var str = document.getElementById("date").innerHTML;
+					var res = str.replace("December 19, 2018", "January 10, 2019");
+					document.getElementById("date").innerHTML = res;
+				}
+				$(document).ready(function () {
+					$(".d1").click(function () {
+						$("tr.1").hide();
+					});
+					$(".d2").click(function () {
+						$("tr.2").hide();
+					});
+					$(".d3").click(function () {
+						$("tr.3").hide();
+					});
+					$(".d4").click(function () {
+						$("tr.4").hide();
+					});
+
+
+				});
+
+
+				function nav1() {
+					window.location = "job1.html";
+				}
+				function nav2() {
+					window.location = "about.html";
+				}
+				function nav3() {
+					window.location = "about.html";
+				}
+				function nav4() {
+					window.location = "about.html";
+				}
+			</script>
+
 		</div>
 	</div>
 	<br>
@@ -173,14 +220,14 @@ button{
 	<br>
 	<br>
 	<br>
-	
+
 	<div class="footer">
 		<p>Northwest Missouri State University
-		  800 University Drive | Maryville, MO 64468
-		  660.562.1212 | www.nwmissouri.edu</p>
-	  </div>
-		
-	
+			800 University Drive | Maryville, MO 64468
+			660.562.1212 | www.nwmissouri.edu</p>
+	</div>
+
+
 </body>
 
 </html>
