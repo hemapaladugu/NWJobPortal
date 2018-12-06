@@ -35,7 +35,7 @@
             <span>Drop us a line.</span>
           </div>
           <div class="panel">
-            <form>
+            <form id="myForm">
               <div class="contact-form mar-top30">
                 <label> <span>Full name</span>
                   <input type="text" class="input_text" name="name" id="name" />
@@ -67,7 +67,7 @@
                             Thank you.
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+                            <button type="button" class="btn btn-success" onclick="reset()" data-dismiss="modal">OK</button>
                           
                           </div>
                         </div>
@@ -92,7 +92,11 @@
 		  800 University Drive | Maryville, MO 64468
 		  660.562.1212 | www.nwmissouri.edu</p>
     </div>
-    
+    <script>
+    function reset(){
+      document.getElementById("myForm").reset();
+    }
+    </script>
 </body>
 
 </html>
