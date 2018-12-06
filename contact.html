@@ -5,6 +5,9 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Northwest Jobs</title>
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -44,8 +47,32 @@
                   <input type="text" class="input_text" name="subject" id="subject" />
                 </label>
                 <label> <span>Message</span>
-                  <textarea class="message" name="feedback" id="feedback"></textarea>
-                  <input type="button" class="button" value="Submit Form" />
+                  <textarea class="message" name="feedback" id="feedback"></textarea><br><br><br>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                      Submit 
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle"><b>Contact Form</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Your message sent to admin.
+                            Thank you.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </label>
               </div>
             </form>
@@ -64,7 +91,8 @@
 		<p>Northwest Missouri State University
 		  800 University Drive | Maryville, MO 64468
 		  660.562.1212 | www.nwmissouri.edu</p>
-	  </div>
+    </div>
+    
 </body>
 
 </html>
